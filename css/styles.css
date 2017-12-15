@@ -1,0 +1,84 @@
+body {
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: darkgray;
+}
+
+h1, h3 {
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 2px 5px 10px #000c54;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  grid-auto-rows: minmax(100px, auto);
+  background-image: url(https://data.whicdn.com/images/262378523/original.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+}
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine{
+  text-align: center;
+    background-color: rgba(255, 255, 255, .5);
+    color: rgb(255, 255, 255);
+}
+
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover, .seven:hover, .eight:hover, .nine:hover{
+  text-align: center;
+    background-color: rgba(255, 255, 255, .6);
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 5px 10px #000c54;
+}
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3em;
+  text-shadow: 2px 5px 10px #000c54;
+}
+.one {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.two {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.three {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.four {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.five {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.six {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.seven {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.eight {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.nine {
+  grid-column: 3;
+  grid-row: 3;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>TicTacToe</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="plugins/DataTables/datatables.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="plugins/DataTables/datatables.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <div id="registerContent">
+        <div class="row jumbotron">
+          <div class="row">
+            <div class="col-md-12 title">
+              <h1>TicTacToe</h1>
+              <hr class="my-4">
+            </div>
+          </div>
+      		<form id="registerPlayersForm">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>Player 1: 0</h3>
+                <div class="row">
+          				<div class="col-md-6">
+          					<div class="form-group">
+                      <input type="text" name="first_name_player1" id="firstNamePlayer1" class="form-control input-sm" placeholder="First Name">
+          					</div>
+          				</div>
+          				<div class="col-md-6">
+          					<div class="form-group">
+          						<input type="text" name="last_name_player1" id="lastNamePlayer1" class="form-control input-sm" placeholder="Last Name">
+          					</div>
+          				</div>
+          			</div>
+              </div>
+              <div class="col-md-6">
+                <h3>Player 2: X</h3>
+                <div class="row">
+          				<div class="col-md-6">
+          					<div class="form-group">
+                      <input type="text" name="first_name_player2" id="firstNamePlayer2" class="form-control input-sm" placeholder="First Name">
+          					</div>
+          				</div>
+          				<div class="col-md-6">
+          					<div class="form-group">
+          						<input type="text" name="last_name_player2" id="lastNamePlayer2" class="form-control input-sm" placeholder="Last Name">
+          					</div>
+          				</div>
+          			</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <input type="submit" value="Register to start" class="btn btn-info btn-block">
+              </div>
+            </div>
+      		</form>
+        </div>
+      </div>
+      <div id="beepBoopPlay">
+         <div class="jumbotron">
+              <h1 id="greetingsTitle"></h1>
+               <hr class="my-4">
+                <form id="numberForm">
+                  <div class="board">
+                    <div class="one space" id="00">
+                      <h1 class="output"></h1>
+                    </div>
+                    <div class="two space" id="01">
+                      <h1 class="output"></h1>
+                    </div>
+                    <div class="three space" id="02">
+                      <h1 class="output"></h1>
+                    </div>
+                    <div class="four space" id="10">
+                      <h1 class="output"></h1>
+                    </div>
+                    <div class="five space" id="11">
+                      <h1 class="output"></h1>
+                    </div>
+                    <div class="six space" id="12">
+                      <h1 class="output"></h1>
+                    </div>
+                    <div class="seven space" id="20">
+                      <h1 class="output"></h1>
+                    </div>
+                    <div class="eight space" id="21">
+                      <h1 class="output"></h1>
+                    </div>
+                    <div class="nine space" id="22">
+                      <h1 class="output"></h1>
+                    </div>
+                  </div>
+                  <div class="board">
+                    <table class="table table-bordered" id="board">
+                      <tbody>
+                        <tr>
+                          <td>hello</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+
+
+</html>
